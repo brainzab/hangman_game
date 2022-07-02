@@ -17,7 +17,7 @@ class ConsoleInterface
     END
 
     if @game.won?
-      puts "Поздравляем, вы выиграли!"
+      puts 'Поздравляем, вы выиграли!'
     elsif @game.lost?
       puts "Вы проиграли! Было загадано слово: #{@game.word}"
     end
