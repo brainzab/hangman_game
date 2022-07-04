@@ -20,7 +20,11 @@ Install Ruby and run on command line
 **About files:** 
 
 main.rb - main programm file
+
 lib/game.rb - a class that describes logic of the game
+
 lib/console_interface.rb - a class designed to display current game status
+
 data/figures - files with graphics that display status of the game
+
 data/words.txt - a file with a list of words from which the computer chooses randomly to play
