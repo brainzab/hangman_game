@@ -1,12 +1,12 @@
 class ConsoleInterface
-  FIGURES = Dir[__dir__ + '/../data/figures/*.txt'].sort.map { |file_name| File.read(file_name) }
+  FIGURES = Dir["#{__dir__}/../data/figures/*.txt"].sort.map { |file_name| File.read(file_name) }
 
   def initialize(game)
     @game = game
   end
 
   def print_out
-    puts <<~END
+    puts <<~GAME_STATUS
       Слово: #{word_to_show}
 
       #{figure}
@@ -14,10 +14,10 @@ class ConsoleInterface
       Ошибки (#{@game.errors_made}): #{errors_to_show}
       У вас осталось ошибок: #{@game.errors_allowed}
 
-    END
+    GAME_STATUS
 
     if @game.won?
-      puts "Поздравляем, вы выиграли!"
+      puts 'Поздравляем, вы выиграли!'
     elsif @game.lost?
       puts "Вы проиграли! Было загадано слово: #{@game.word}"
     end
@@ -31,7 +31,7 @@ class ConsoleInterface
     result =
       @game.letters_to_guess.map do |letter|
         if letter.nil?
-          "__"
+          '__'
         else
           letter
         end
@@ -44,8 +44,7 @@ class ConsoleInterface
   end
 
   def get_input
-    print "Введите следующую букву: "
-    letter = gets[0].upcase
-    letter
+    print 'Введите следующую букву: '
+    gets[0].upcase
   end
 end
