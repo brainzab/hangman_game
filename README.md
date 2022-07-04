@@ -13,7 +13,7 @@ About the game: https://en.wikipedia.org/wiki/Hangman_(game)
 
 **How to lauch:**
 
-Install ruby and run on command line
+Install ruby and run on command line[^1]
 `ruby main.rb`
 
 **About files:** 
