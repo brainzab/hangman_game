@@ -1,9 +1,9 @@
 require_relative 'lib/console_interface'
 require_relative 'lib/game'
 
-puts "Всем привет!"
+puts 'Всем привет!'
 
-word = File.readlines(__dir__ + "/data/words.txt", chomp: true).sample
+word = File.readlines("#{__dir__}/data/words.txt", chomp: true).sample
 
 game = Game.new(word)
 console_interface = ConsoleInterface.new(game)
