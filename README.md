@@ -11,7 +11,7 @@ About the game: https://en.wikipedia.org/wiki/Hangman_(game)
 - If the word is guessed completely, player wins
 - If the player made a mistake more than the set limit (7 mistakes) - player lost
 
-**How to lauch: **
+**How to lauch:**
 
 Install ruby and run on command line
 `ruby main.rb`
