@@ -1,6 +1,7 @@
 # Hangman Game
 
 Word guessing game "**Hangman**" - implemented on Ruby. 
+
 About the game: https://en.wikipedia.org/wiki/Hangman_(game)
 
 **Rules:** 
@@ -15,7 +16,9 @@ About the game: https://en.wikipedia.org/wiki/Hangman_(game)
 
 Install Ruby and run on command line
 
-`ruby main.rb`
+```
+ruby main.rb
+```
 
 **About files:** 
 
